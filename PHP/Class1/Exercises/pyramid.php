@@ -1,6 +1,6 @@
 <?php
 
-$in = 4;
+$in = readline("Enter number");
 for ( $i = 0; $i < $in; $i++ ) {
 
     for ( $j = 0; $j < $in - $i - 1; $j++ ) {
