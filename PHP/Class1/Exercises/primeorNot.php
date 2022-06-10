@@ -1,13 +1,27 @@
 <?php
-$input = 0;
-$i = 0;
-$input = readline( "Enter a number: " );
-if ( $input == 0 || $input == 1 ) {
-    echo "$input is not a prime number";
-} else if ( $input % 2 == 0 ) {
-    echo "Prime number";
-} else if (  ( $input ) == false ) {
-    echo "Not a positive Integers";
+function check_prime( $num )
+{
+    if ( $num == 1 ) {
+        return 0;
+    }
+    for ( $i = 2; $i <= $num / 2; $i++ ) {
+        if ( $num % $i == 0 ) {
+            return 0;
+        }
+    }
+    return 1;
+}
+$num = readline( "Enter a positive number: " );
+
+$flag_val = check_prime( $num );
+
+if ( is_float( $num ) ==  ) {
+    echo "Enter a positive";
+} else if ( $num == 0 || $num == 1 ) {
+    echo "$num is not a prime number";
+} else if ( $flag_val == 0 ) {
+    echo "$num is not a prime number";
 } else {
-    echo "$input is not a prime number";
+    echo "$num is a prime number";
+
 }
