@@ -1,11 +1,12 @@
 <?php
 function check_prime( $num )
 {
-    $int = intval($num);
+    // $int = intval($num);
+
 
     if ( $num == 1 ) {
         return 0;
-    }elseif ($num<$int || $num > $int) {
+    }elseif (getType($num)!="integer") {
         return 2;
     }
     for ( $i = 2; $i <= $num / 2; $i++ ) {
