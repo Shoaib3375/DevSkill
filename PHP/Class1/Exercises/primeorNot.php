@@ -16,14 +16,14 @@ function check_prime( $num )
     return 1;
 }
 
-$num = readline( "Enter a positive number: " );
+$num = readline( "Enter a  number: " );
 $flag_val = check_prime( $num );
 if ( $num == 0 || $num == 1 ) {
     echo "$num is not a prime number";
 } else if ( $flag_val == 0 ) {
     echo "$num is not a prime number";
 } elseif ( $flag_val == 2 ) {
-    echo "Enter a positive value";
+    echo "Not a Positive Integers Number";
 } else {
     echo "$num is a prime number";
 }
