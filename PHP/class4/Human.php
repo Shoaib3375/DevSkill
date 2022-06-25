@@ -4,6 +4,6 @@ trait Human
 {
     public function display()
     {
-        echo "Human Display is called";
+        echo "Human Display is called ";
     }
 }

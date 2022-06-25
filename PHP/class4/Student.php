@@ -2,8 +2,8 @@
 
 require_once "Human.php";
 require_once "person.php";
-class Student
+class Student extends Person
 {
-    use Human, person;
+    use Human;
 
 }
