@@ -6,7 +6,7 @@ function check_prime( $num )
 
     if ( $num == 1 ) {
         return 0;
-    } elseif ( getType( $num ) != "integer" ) {
+    } elseif ( getType( $num ) == "integer" ) {
         return 2;
     }
     for ( $i = 2; $i <= $num / 2; $i++ ) {
